@@ -1,0 +1,60 @@
+/*
+author:chrisZhong
+date:2008/07/17
+E-mail:chris-future@163.com
+*/
+body{
+	font:9pt Arial, Helvetica, sans-serif;
+	color:#adb1ba;
+	background:#545c6d;
+}
+*{
+	margin:0;
+	padding:0;
+}
+.login_outerBox{
+	width:602px;
+	margin:0 auto;
+	margin-top:250px;
+	border:1px solid #000;
+}
+.login_innerBox{
+	width:600px;
+	border:1px solid #808793;
+}
+.login_topPan{
+	width:90%;
+	margin:0 auto;
+	padding:20px 0 20px 0;
+	border-bottom:1px dotted #707886;
+}
+.double_line{
+	width:2px;
+	height:15px;
+	background:url("../images/double_line.gif") no-repeat;
+	margin-right:20px;
+}
+.login_text{
+	font-size:20pt;
+	padding-right:20px;
+}
+.login_bottomPan{
+	width:350px;
+	margin:30px 0 40px 180px;
+}
+.login_bottomPan tr td{
+	line-height:30px;
+}
+.input{
+	width:140px;
+	background:#545c6d;
+	border:1px solid #808793;
+}
+.button{
+	height:23px;
+	color:#adb1ba;
+	background:#545c6d;
+	border:2px solid #adb1ba;
+	cursor:pointer;
+	margin-top:20px;
+}

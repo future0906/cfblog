@@ -1,0 +1,37 @@
+﻿<!-- INCLUDE header.html -->
+<!-- INCLUDE lsidebar.html -->
+<!-- INCLUDE rsidebar.html -->
+            <div class="mainbody">
+
+				<!-- IF blogs -->
+				<!-- BEGIN blogs -->
+
+            	<div class="log">
+                	<div class="log_Head">
+                    	<h4 class="bold"><!-- IF on_top = "1" -->[顶置]<!-- ENDIF on_top-->{title}</h4>
+                        <p class="gray">{date} {time}</p>
+                        <p class="gray">发表者：{parent.author}</p>
+                    </div>
+                    <div class="log_Text">
+
+						<!-- IF password -->
+						<p><form method="post" action="./?action=blog&mode=show&param1={id}">这篇日志必需密码才能访问，请输入密码：<input name="password" type="password" class="input"/>&nbsp;&nbsp;<input name="ok" type="submit" class="button" value="&nbsp;确定&nbsp;"/></form></p>
+						<!-- ELSE -->
+						{content}
+						<!-- ENDIF -->
+
+                    </div>
+                    <div class="gray log_Foot"><a href="./?action=blog&mode=show&param1={id}">阅读全文</a>(<span class="gray">{r_count}</span>) | <a href="./?action=blog&mode=show&param1={id}#comment">评论</a>(<span class="gray">{c_count}</span>) | <a href="./?go=admin&action=post&mode=edit&param1={id}">编辑</a> | <a href="./?{parent.list_url}">列表</a></div>
+                </div>
+
+				<!-- END blogs -->
+
+				<!-- ELSE -->
+					
+					没有日志！
+
+				<!-- ENDIF -->
+
+                <div class="page"> {multi_page} </div>
+            </div>
+<!-- INCLUDE footer.html -->

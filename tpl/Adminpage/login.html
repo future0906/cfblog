@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="tpl/Adminpage/style/login.css" type="text/css" />
+<title>登录</title>
+</head>
+<body>
+    <div class="login_outerBox">
+        <div class="login_innerBox">
+            <div class="login_topPan"><span class="login_text">Login</span><span class="double_line">&nbsp;</span>登录</div>
+            <form id="login" name="login" action="./?go=admin&action=login" method="post">
+			<table border="0" cellpadding="0" cellspacing="0" class="login_bottomPan">
+            	<tr>
+                	<td width="16%">用户名：</td>
+                    <td width="84%"><input name="login_id" type="text" class="input"/></td>
+                </tr>
+                <tr>
+                	<td>密　码：</td>
+                    <td><input name="password" type="password" class="input"/></td>
+                </tr>
+                <tr>
+                	<td>有效期：</td>
+                    <td>
+						<input name="cookie" type="radio" id="cookie" value="0"/>不保存
+                        <input name="cookie" type="radio" id="cookie1" value="3600"/ checked='checked'>1小时
+                        <input name="cookie" type="radio" id="cookie2" value="86400"/>1天
+                        <input name="cookie" type="radio" id="cookie3" value="2592000"/>1个月
+                        <input name="cookie" type="radio" id="cookie" value="31104000"/>永久
+                    </td>
+                </tr>
+                <tr>
+                	<td>&nbsp;</td>
+                    <td><input name="ok" type="submit" value="&nbsp;登&nbsp;录&nbsp;" class="button"/>&nbsp;&nbsp;
+						<input name="reset" type="reset" value="&nbsp;重&nbsp;置&nbsp;" class="button"/>
+					</td>
+                </tr>
+            </table>
+			</form>
+        </div>
+    </div>
+</body>
+</html>

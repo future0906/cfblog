@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" language="javascript" src="tpl/Adminpage/jscripts/adminscript.js"> </script>
+<title>{title}</title>
+<link href="tpl/Adminpage/style/admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+    	<div id="header"><a href=""><img src="tpl/Adminpage/images/admin_logo.gif" /></a><span class="beta">beta 2.0</span></div>
+        <div id="nav">
+            <p>
+                <span><a href="./?go=admin&action=dashboard">公告板</a></span>
+                <span><a href="./?go=admin&action=post">文章管理</a></span>
+                <span><a href="./?go=admin&action=photo">相册管理</a></span>
+                <span><a href="./?go=admin&action=comment">评论管理</a></span>
+                <span><a href="./?go=admin&action=category">分类管理</a></span>
+                <span><a href="./?go=admin&action=attachment">附件管理</a></span>
+                <span><a href="./?go=admin&action=message">留言管理</a></span>
+                <span><a href="./?go=admin&action=link">链接管理</a></span>
+                <span><a href="./?go=admin&action=user">用户管理</a></span>
+                <span><a href="./?go=admin&action=data">数据管理</a></span>
+                <span class="actived"><a href="./?go=admin&action=system">系统设置</a></span>
+            </p>
+            <span class="bold quit"><a href="./">博客首页</a> | <a href="./?go=admin&action=logout">退出登录</a></span>
+        </div>
+        <div id="center">
+            <div class="sideBar">
+                <ul>
+                    <li><a href="./?go=admin&action=photo&mode=manage">相册管理</a></li>
+                </ul>
+            </div>
+            <div class="mainbody">
+                <div class="title_pan bold">系统设置</div>
+                <div class="inner_box">
+                    <form action="./?go=admin&action=system" method="post">
+                <!-- BEGIN configs -->
+                    <!-- IF type=="TextLine" -->
+                        {dis_name}:<input type="input" name="{name}" value="{cur}"/>
+
+                    <!-- ELSEIF type=="Integer" -->
+
+                        {dis_name}:<input type="input" name="{name}" value="{cur}"/>
+
+                    <!-- ENDIF -->
+                    <p></p>
+                <!-- END configs --> 
+                    <input type="submit" name="submit" value="保存"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">© Powered by <a href="">cfBlog</a>  2002-2008, All Rights Reserved.</div>
+    </div>
+</body>
+</html>

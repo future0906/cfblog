@@ -1,0 +1,152 @@
+/*
+author:chris
+date:2007/10/8
+*/
+body{
+	color:#fff;
+	background:#393939;
+}
+a:link,a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	color:#d0c131;
+}
+.linkcol a:link,.linkcol a:visited{
+	color:#FFCC00;
+}
+.linkcol a:hover{
+	color:#FFF;
+}
+#header div{
+	color:#2d6f7d;
+}
+.nav div {
+	border-bottom:1px solid #000;
+	border-right:1px solid #000;
+	border-left:1px solid #000;
+}
+#headbg{
+	height:120px;
+	background:url(../images/headbg01.gif) repeat-x left bottom;
+}
+#header{
+	height:120px;
+	background:url(../images/headbg.gif) no-repeat center bottom;
+}
+/*For mainbody*/
+.BlogTit{	
+	background:#454545;
+}
+.BlogTitle a:link,.BlogTitle a:visited{
+	color:#FFDB48;
+}
+.BlogTitle a:hover{
+	color:#FFCC00;
+}
+.BlogTime{
+	color:#6aa8c0;
+}
+.dashed{	
+	border-bottom:1px dashed #666;
+}
+.dashed p{
+	color:#999;
+}
+.tag{
+	color:#ab00f0;
+}
+.information{
+	color:#817e66;
+}
+.information a:link,.information a:visited{
+	color:#817e66;
+}
+.information a:hover{
+	color:#d0c131;
+}
+.red{
+	color:#FFCC00;
+}
+/*For sidebar*/
+.SUN{
+	color:#ab00f0;
+}
+.SAT{
+	color:#019bef;
+}
+/*For footer*/
+#footer{
+	color:#817e66;
+}
+#footer a:link,#footer a:visited{
+	color:#d0c131;
+}
+/*For Comment*/
+.input{
+	height:18px;
+	margin-bottom:10px;
+	background:#333;
+	border:1px dashed #666;
+}
+.textarea{
+	background:#333;
+	border:1px dashed #666;
+	scrollbar-face-color:#333;
+	scrollbar-highlight-color:#333;
+	scrollbar-3dlight-color:#666;
+	scrollbar-Shadow-color:#666;
+	scrollbar-arrow-color:#666;
+	scrollbar-track-color:#333;	
+	scrollbar-darkshadow-color:#333;
+}
+.button{
+	width:50px;
+	height:20px;
+	border:none;
+	cursor:pointer;
+	margin:10px 0;
+	color:#FFF;
+	background-color: #016CA7;
+}
+*html .button{
+	padding-top:3px;
+}
+.font{
+	background:url("../images/gril-de.gif") no-repeat left center;
+}
+.comment-tit{
+	background:url("../images/gril-01.gif") no-repeat left center;	
+}
+
+.comment-tit{
+	border-bottom:1px dashed #999;
+	color:#FFCC00;
+}
+.comment-replay{
+	border:1px dashed #817e66;
+	color:#817e66;
+}	
+.comment-p{
+	color:#999;
+}
+/*For Tag*/
+.yellow{
+	color:#FFCC00;
+}
+.tagscloud{
+	color:#6aa8c0;
+}
+/*For Message*/
+.message{
+	width:100%;
+	margin:20px 0 20px 0;
+}
+.b4{
+	width:80px;
+}
+/*For About me*/
+.data table,.data p{
+	color:#999;
+}

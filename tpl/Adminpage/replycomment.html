@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>公告板</title>
+<link href="tpl/Adminpage/style/admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+    	<div id="header"><a href=""><img src="tpl/Adminpage/images/admin_logo.gif" /></a><span class="beta">beta 2.0</span></div>
+        <div id="nav">
+            <p>
+                <span class="actived"><a href="">公告板</a></span>
+                <span><a href="./?go=admin&action=post">文章管理</a></span>
+                <span><a href="./?go=admin&action=photo">相册管理</a></span>
+                <span><a href="./?go=admin&action=comment">评论管理</a></span>
+                <span><a href="./?go=admin&action=category">分类管理</a></span>
+                <span><a href="./?go=admin&action=attachment">附件管理</a></span>
+                <span><a href="./?go=admin&action=message">留言管理</a></span>
+                <span><a href="./?go=admin&action=link">链接管理</a></span>
+                <span><a href="./?go=admin&action=user">用户管理</a></span>
+                <span><a href="./?go=admin&action=data">数据管理</a></span>
+                <span><a href="./?go=admin&action=system">系统设置</a></span>
+            </p>
+            <span class="bold quit"><a href="./">博客首页</a> | <a href="./?go=admin&action=logout">退出登录</a></span>
+        </div>
+		
+		<div id="center">
+			<div class="outer_box">
+				<div class="title">回复评论</div>
+				<div class="inner_box">
+					<!-- BEGIN content -->
+					<form name="NewLog" action="./?go=admin&action=comment&mode=reply&param1={eid}" method="post">
+						评论内容：<div><textarea readonly name="replys" cols="50" rows="10" class="textarea">{content}</textarea></div>
+						回复：<div><textarea name="reply" cols="90" rows="20" class="textarea"></textarea></div>
+						<div class="align"><input name="submit" type="submit" class="button" value="提交" /><input name="reset" type="reset" class="button" value="重置" />
+						</div>
+					</form>
+					<!-- END content -->
+			    </div>
+			</div>
+		</div>
+		<div id="footer">
+			<p><a href="./?go=front">[返回首页]</a> <a href="./?go=admin">[返回管理首页]</a> <a href="./?go=admin&action=logout">[注销登入]</a><br/>  Powered by <a href="http://www.cf-blog.net">cfblog {blog_version}</a></p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿<!-- INCLUDE header.html -->
+<!-- INCLUDE lsidebar.html -->
+<!-- INCLUDE rsidebar.html -->
+            <div class="mainbody">
+
+                <!-- BEGIN blog_show -->
+                
+            	<div class="log">
+                	<div class="log_Head">
+                    	<h4 class="bold"><!-- IF on_top = "1" -->[顶置]<!-- ENDIF on_top-->{title}</h4>
+                        <p class="gray">{date} {time}</p>
+                        <p class="gray">发表者：{parent.author}</p>
+                    </div>
+                    <div class="log_Text linkcol1">
+
+                    {content}
+                    
+                    </div>
+                </div>
+                
+                <!-- END blog_show -->
+
+                <div class="log_comment">
+                	<h4 class="bold">评论</h4>
+
+					<!-- IF blog_comments -->
+						<!-- BEGIN blog_comments -->
+							
+						<div class="comment_box">
+							<P><span class="bold blue">{nick_name}</span>(&nbsp;<a href="http://{homepage}">{homepage}</a>&nbsp;)发表于{date} </p>
+							<p>{content}</p>
+							
+							<!-- IF reply -->
+							
+							<div class="host_answer">
+								<p class="bold"><span>主人回复：</span><br>
+								<span>{reply}</span></p>
+							</div>
+							
+							<!-- ENDIF reply -->
+							
+						</div>                        
+
+						<!-- END blog_comments -->
+						
+					<!-- ELSE -->
+
+						<div class="comment_box">
+							<p>此日志暂无评论！<p>
+						</div>                
+
+					<!-- ENDIF -->
+                
+                <div class="Form">
+                	<h4 class="bold">发表评论</h4>
+					<form id="SendComment" name="SendComment" action="./?action=ccommit" method="post">
+						<input name="blogid" type="hidden" value="{blog_id}" />
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>姓　　名：</td>
+                            <td><input name="nick_name" type="text" class="input"/>&nbsp;<span class="blue">*</span></td>
+                        </tr>
+                        <tr>
+                            <td>E&nbsp;&nbsp;-&nbsp;&nbsp;mail：</td>
+                            <td><input name="email" type="text" class="input"/></td>
+                        </tr>
+                        <tr>
+                            <td>个人主页：</td>
+                            <td><input name="address" type="text" class="input"/></td>
+                        </tr>
+                        <tr>
+                            <td>内　　容：</td>
+                            <td><textarea name="content" cols="41" rows="3" class="input"></textarea>&nbsp;<span class="blue">*</span></td>
+                        </tr>
+                        <tr>
+                            <td>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</td>
+                            <td><input name="robotcode" type="text" class="input" size="6"/>&nbsp;<span class="blue">*</span>&nbsp;&nbsp;<img src="./?go=image&mode=robot" />&nbsp;&nbsp;<a href="">看不清，换一张</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input name="submit" type="submit" id="submit" value="&nbsp;提交&nbsp;" class="button"/></td>
+                        </tr>
+                    </table>
+					</form>
+                </div>
+            </div>
+<!-- INCLUDE footer.html -->

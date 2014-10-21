@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>公告板</title>
+<link href="tpl/Adminpage/style/admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+    	<div id="header"><a href=""><img src="tpl/Adminpage/images/admin_logo.gif" /></a><span class="beta">beta 2.0</span></div>
+        <div id="nav">
+            <p>
+                <span class="actived"><a href="">公告板</a></span>
+                <span><a href="./?go=admin&action=post">文章管理</a></span>
+                <span><a href="./?go=admin&action=photo">相册管理</a></span>
+                <span><a href="./?go=admin&action=comment">评论管理</a></span>
+                <span><a href="./?go=admin&action=category">分类管理</a></span>
+                <span><a href="./?go=admin&action=attachment">附件管理</a></span>
+                <span><a href="./?go=admin&action=message">留言管理</a></span>
+                <span><a href="./?go=admin&action=link">链接管理</a></span>
+                <span><a href="./?go=admin&action=user">用户管理</a></span>
+                <span><a href="./?go=admin&action=data">数据管理</a></span>
+                <span><a href="./?go=admin&action=system">系统设置</a></span>
+            </p>
+            <span class="bold quit"><a href="./">博客首页</a> | <a href="./?go=admin&action=logout">退出登录</a></span>
+        </div>
+        <div id="center">
+            <div class="notic_Pan">
+            	<div class="pan_0">
+                    <h5>系统信息</h5>
+                    <ul>
+					
+						<!-- BEGIN system_info -->
+						
+                        <li><span class="blod">{text}：</span>{value}</li>
+						
+						<!-- END system_info -->
+						
+                    </ul>
+                </div>
+                <div class="pan_0">
+                    <h5>常用链接</h5>
+                    <ul>
+                        <li><a href="">审核评论</a> ( <span class="red blod">0</span> 待审核 )</li>
+                        <li><a href="">审核评论</a> ( <span class="red blod">0</span> 待审核 )</li>
+                    </ul>
+                </div>
+                <div class="pan_0">
+                    <h5>服务器版本信息</h5>
+                    <ul>
+						
+						<!-- BEGIN server_v -->
+						
+                        <li>PHP版本： {php_version} </li>
+                        <li>GD版本： {gd_version} </li>
+                        <li>MySQL版本： {mysql_version} </li>
+                        <li>服务器系统信息： {os_version} </li>
+                        <li>Zend版本： {zend_version} </li>
+						
+						<!-- END server_v -->
+						
+                    </ul>
+                </div>
+                <p class="check_Pan"><a href="./?go=admin&action=phpinfo">查看phpinfo()</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="">查看数据库占用情况</a></p>
+            </div>
+        </div>
+        <div id="footer">© Powered by <a href="">cfBlog</a>  2002-2008, All Rights Reserved.</div>
+    </div>
+</body>
+</html>

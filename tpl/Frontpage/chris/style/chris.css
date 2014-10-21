@@ -1,0 +1,328 @@
+/*
+author:chris.Zhong
+date:2008-04-29
+E-mail:chris@163.com
+*/
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	border:none;
+}
+body{
+	font:9pt Arial, Helvetica, sans-serif;
+}
+a:link,a:visited{
+	color:#c8355a;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.linkcol a:link,.linkcol a:visited{
+	color:#686c44;
+	text-decoration:none;
+}
+.linkcol a:hover{
+	color:#eb0010;
+	text-decoration:none;
+}
+.linkcol2 a:link,.linkcol2 a:visited{
+	color:#686c44;
+}
+.linkcol2 a:hover{
+	text-decoration:underline;
+}
+.red{
+	color:#c8355a;
+}
+.blue{
+	color:#00adff;
+}
+.purple{
+	color:#8300ff;
+}
+.gray{
+	color:#999;
+}
+.bold{
+	font-weight:bold;
+}
+.input{
+	border:1px solid #ccc;
+}
+.button{
+	background:none;
+	height:21px;
+	cursor:pointer;
+	border:2px solid #24768f;
+	color:#24768f;
+}	
+/*----------------------*/
+#container{
+	width:100%;
+	background:url("../images/chrisTop.gif") no-repeat right top;
+}
+#header{
+	width:100%;
+	position:relative;
+}
+#center:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+#center{
+	margin:0 40px;
+	height:1%;/*hack for IE*/
+}
+#footer{
+	overflow:hidden;
+	margin-top:40px;
+}
+#footer p{
+	text-align:center;
+	margin-bottom:10px;
+}
+/*----------------------*/
+.logo{
+	width:305px;
+	height:142px;
+	position:relative;
+}
+.logo p{
+	position:absolute;
+	left:155px;
+	top:90px;
+}
+.nav{
+	width:305px;
+	position:absolute;
+	top:65%;
+	right:23%;
+	font-size:14px;
+}
+.nav span{
+	margin-right:10px;
+}
+.left_Pan{
+	width:220px;
+	float:left;
+}
+.mainbody{
+	margin:0 260px 0 260px;
+}
+.right_Pan{
+	width:220px;
+	float:right;
+}
+/*---------sideBar-------------*/
+h3{
+	font-size:12px;
+	margin-bottom:8px;
+}
+.hobby{
+	padding-bottom:20px;
+	line-height:18px;
+}
+.Div_0{
+	margin-top:10px;
+	padding-bottom:20px;
+}
+.Div_0 .img{
+	border:4px solid #fde6d8;
+}
+.Div_0 p{
+	line-height:18px;
+}
+.p_align{
+	margin-left:25px;
+}
+.type p{
+	width:202px;
+	line-height:22px;
+	border-bottom:1px solid #cdbeb3;
+	background:url("../images/type.gif") no-repeat 0 2px;
+	padding-left:18px;
+}
+.Div_1 p{
+	width:210px;
+	line-height:22px;
+	border-bottom:1px solid #cdbeb3;
+	background:url("../images/icon02.gif") no-repeat 0 8px;
+	padding-left:10px;
+}
+.links ul:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+.links ul{
+	list-style:none;
+}
+.links ul li{
+	width:49.5%;
+	float:left;
+	margin:5px 0 10px 0;
+}
+.links img{
+	border:1px solid #ccc;
+	padding:1px;
+}
+.textLinks{
+	width:100%;
+	border-bottom:1px dashed #d9d9d9;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+.textLinks p{
+	line-height:22px;
+	background:url("../images/textLinks.gif") no-repeat 0 4px;
+	padding-left:17px;
+}
+/*---------mainbody-------------*/
+.log{
+	width:98.6%;
+	margin:10px 0 40px 0;
+	border-bottom:1px solid #cdbeb3;	
+}
+h4{
+	font-size:16px;
+	margin-bottom:5px;
+}
+.log_Head{
+	padding-bottom:5px;
+	margin-bottom:15px;
+	border-bottom:1px dashed #cdbeb3;	
+}
+.log_Head p{
+	line-height:18px;
+}
+.log_Text{
+	font-size:13px;
+}
+.log_Text p{
+	line-height:20px;
+	margin-bottom:20px;
+}
+.log_Text img{
+	border:1px solid #ccc;
+	padding:1px;
+}
+.log_Foot{
+	padding-bottom:20px;
+	text-align:right;
+}
+.page{
+	text-align:right;
+}
+/*-------log_list style-------*/
+.list_body{
+	margin-left:260px;
+}
+.log_list:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+.log_list{
+	width:99.6%;
+	margin:10px 0 20px 0;
+}
+.log_list tr td{
+	padding:10px 0;
+	line-height:18px;
+	border-bottom:1px dotted #d0d0d0;	
+}
+/*-------log_detail style-------*/
+.host_answer{
+	padding:5px 0 5px 13px;
+}
+.log_comment{
+	margin-bottom:20px;
+	border-bottom:1px solid #e0e0e0;
+}
+.comment_box{
+	margin-bottom:20px;
+}
+.comment_box p{
+	line-height:22px;
+}
+.Form{
+	margin-bottom:20px;
+	border-bottom:none;
+}
+.Form table{
+	width:100%;
+	margin-top:10px;
+}
+.Form table tr td{
+	padding-bottom:5px;
+}
+.Form table tr td img{
+	border:1px solid #d0d0d0;
+}
+/*-------photos style-------*/
+.pic_Pan{
+	width:100%;
+    margin-bottom:30px;
+}
+.pic_Pan:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+.pic_Pan div{
+	width:24%;
+	float:left;
+	margin-top:30px;
+	text-align:center;
+}
+.pic_Pan div img{
+	border:1px solid #ccc;
+	margin-bottom:5px;
+	padding:4px;
+}
+.pic_Pan div p{
+	text-align:center;
+}
+/*-------resume style-------*/
+.contactUs{
+	width:800px;
+	margin:0 auto;
+	background:#f9f9f9;
+	border:1px solid #d0d0d0;
+	padding:0 20px;
+}
+.b2{
+	width:50px;
+	text-align:right;
+}
+.data{
+	margin:20px 0 20px 0;
+}
+.data p{
+	line-height:25px;
+}
+.b3{
+	color:#c8355a;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	font-weight:bold;
+	border-bottom:1px dashed #e0e0e0;
+}
+.base{	
+	width:100%;
+}
+.base tr td{
+	height:25px;
+}

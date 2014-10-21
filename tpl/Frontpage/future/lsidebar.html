@@ -1,0 +1,46 @@
+        	<div class="aboutBar">
+                <div class="Div_0">
+                    <h3>HeyMe !</h3>
+                    <img src="tpl/Frontpage/{templatename}/images/future.jpg" width="110" height="100" class="img"/>
+                    <p class="p_align">ZhiXiang Yao</p>
+                    <p class="p_align">广东 , 广州</p>
+                </div>
+                <div class="Div_0 Div_1">
+                    <p>一分耕耘,一分收获</p>
+                </div>
+                <div class="Div_0 Div_2 linkcol2">
+                    <h3>最新文章</h3>
+
+                    <!-- BEGIN newestblog -->
+
+                    <p><a href="./?action=blog&mode=show&param1={eid}">{title}</a></p>
+
+					<!-- END newestblog -->
+
+                </div>
+                <div class="Div_0 linkcol2 links">
+                    <h3>友情链接</h3>
+                    <div class="linkcol textLinks">
+
+					<!-- BEGIN links -->
+						<!-- IF groupid=="1" -->                    	
+
+                        <p><a href="{url}">{name}</a></p>
+
+						<!-- ENDIF -->
+					<!-- END links -->
+
+                    </div>
+                    <ul>
+
+					<!-- BEGIN links -->
+						<!-- IF groupid=="2" -->  
+
+                        <li><a href="{url}"><img src=".{logo}" width="80px" height="30px"/></a></li>
+
+						<!-- ENDIF -->
+					<!-- END links -->
+
+                    </ul>
+                </div>            
+            </div>

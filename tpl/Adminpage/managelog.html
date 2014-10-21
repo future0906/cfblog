@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{title}</title>
+<script language="javascript" src="tpl/Adminpage/jscripts/adminscript.js"></script>
+<link href="tpl/Adminpage/style/admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+    	<div id="header"><a href=""><img src="tpl/Adminpage/images/admin_logo.gif" /></a><span class="beta">beta 2.0</span></div>
+        <div id="nav">
+            <p>
+                <span><a href="./?go=admin&action=dashboard">公告板</a></span>
+                <span class="actived"><a href="./?go=admin&action=post">文章管理</a></span>
+                <span><a href="./?go=admin&action=photo">相册管理</a></span>
+                <span><a href="./?go=admin&action=comment">评论管理</a></span>
+                <span><a href="./?go=admin&action=category">分类管理</a></span>
+                <span><a href="./?go=admin&action=attachment">附件管理</a></span>
+                <span><a href="./?go=admin&action=message">留言管理</a></span>
+                <span><a href="./?go=admin&action=link">链接管理</a></span>
+                <span><a href="./?go=admin&action=user">用户管理</a></span>
+                <span><a href="./?go=admin&action=data">数据管理</a></span>
+                <span><a href="./?go=admin&action=system">系统设置</a></span>
+            </p>
+            <span class="bold quit"><a href="./">博客首页</a> | <a href="./?go=admin&action=logout">退出登录</a></span>
+        </div>
+        <div id="center">
+            <div class="sideBar">
+                <ul>
+                    <li><a href="./?go=admin&action=post&mode=new">发布文章</a></li>
+                    <li><a href="./?go=admin&action=post&mode=manage">文章管理</a></li>
+                    <li><a href="./?go=admin&action=post&mode=draft">草&nbsp;稿&nbsp;箱</a></li>
+                </ul>
+				
+            </div>
+            <div class="mainbody">
+                <div class="title_pan bold">管理文章</div>
+                <!-- IF blog -->
+                <div class="inner_box">
+                <p class="changeType">选择分类：
+
+                <!-- BEGIN category -->
+
+                    <span><a href="./?go=admin&action=post&mode=manage&param2={eid}">{name}</a> ( <em>{blogcount}</em> )</span>
+
+                <!-- END category -->
+                
+                </p>
+                <form id="LogManage" name="LogManage" action="./?go=admin&action=post&mode=delete" method="post">
+
+                
+                <table border="0" cellpadding="0" cellspacing="0" class="manageLog_tab">
+                    <thead>
+                        <tr>
+                            <th width="6%" scope="col">选择</th>
+                            <th width="52%" scope="col">标题</th>
+                            <th width="16%" scope="col">分类</th>
+                            <th width="14%" scope="col">时间</th>
+                            <th width="6%" scope="col">编辑</th>
+                            <th width="6%" scope="col">删除</th>
+                        </tr>
+                    </thead>
+                    
+                    <!-- BEGIN blog -->
+                    
+                    <tr>
+                        <td><input id="selection[]" name="selection[]" type="checkbox" value="{id}"/></td>
+                        <td>{title}</td>
+                        <td>{category}</td>
+                        <td>{date}&nbsp;&nbsp;{time}</td>
+                        <td><a href="./?go=admin&action=post&mode=edit&param1={id}"><img src="tpl/Adminpage/images/pen.gif" width="13" height="13"/></a></td>
+                        <td><a href="./?go=admin&action=post&mode=delete&param1={id}"><img src="tpl/Adminpage/images/del.gif" width="16" height="16"/></a></td>
+                    </tr>
+                    
+                    <!-- END blog -->
+                    
+                </table>
+                
+                <div class="function">
+                    <span class="gray changeAll"><a href="javascript:void(0);" onClick="select_all('selection[]');">全选</a>&nbsp;|&nbsp;<a href="javascript:void(0);" onClick="post_all('LogManage');">删除</a></span>
+                    <span class="page">{multi_page}</span>
+                </div>
+                </form>
+                
+                <!-- ELSE -->
+                
+                <strong>没有文章！</strong>
+                
+                <!-- ENDIF blog -->                
+                </div>
+            </div>
+        </div>
+        <div id="footer">© Powered by <a href="">cfBlog</a>  2002-2008, All Rights Reserved.</div>
+    </div>
+</body>
+</html>

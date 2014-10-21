@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Chris,Future,cfBlog,Blog,阿肠,future0906,{keywords}" />
+<meta name="description" content="Chris,Future,Blog,阿肠,future0906,{description}" />
+<meta name="author" content="Chris,Future,阿肠,future0906" />
+<meta name="copyright" content="cfBlog,Chris,Future,阿肠" />
+<meta name="Robots" content="all" />
+<title>{title}</title>
+<link href="tpl/Frontpage/{templatename}/style/common.css" rel="stylesheet" type="text/css" />
+<link href="tpl/Frontpage/{templatename}/style/form-color.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<p>{blog_title}</p>
+			<div>{blog_subtitle}</div>
+		</div>
+		<div id="center">
+			<div class="nav">
+				<div><a href="./?action=index">首页</a></div>
+				<div><a href="./?action=blog&mode=list">日志</a></div>
+				<div><a href="./?action=photo">相册</a></div>
+				<div><a href="./?go=admin">登录后台</a></div>				
+				<div><a href="./?action=about">关于我</a></div>	
+				<!-- BEGIN extract_menus -->
+				<div><a href="{link}">{name}</a></div>
+				<!-- END extract_menus -->
+			</div>
+			<div class="warpper">
+				<div class="mainbody">
+					<div class="blog">
+						<!-- BEGIN blog_show -->
+						<div class="BlogTit">
+							<div class="BlogTitle"><a href=""><!-- IF on_top = "1" -->[顶置]<!-- ENDIF on_top-->{title}</a></div>
+							<div class="BlogTime">{date}</div>
+						</div>
+						<div class="tag">分类:{category}</div>
+						<div class="dashed wrap_content">
+							{content}
+						</div>
+						<div class="information">{parent.author}@{time} | <a href="">阅读全文({r_count})</a> | <a href="./?go=admin&action=post&mode=edit&param1={id}">编辑</a></div>
+						<!-- END blog_show -->
+						<div id="comment" class="comment">
+							<p class="font">评论</p>
+							<!--评论内容-->
+						<!-- IF blog_comments -->
+							<!-- BEGIN blog_comments -->
+							<div>
+								<div class="comment-tit"><span class="linkcol"><a href="">{nick_name}</a></span>(<span class="linkcol"><a href="http://{homepage}">{homepage}</a></span>)发表于{date}</div>
+								<p class="comment-p wrap_content">{content}</p>
+								<!-- IF reply -->
+								<div class="comment-replay">
+									<p><span class="underline">{parent.author}</span>回复<span class="underline">{nick_name}</span>说：{reply}</p>
+								</div>
+								<!-- ENDIF reply -->
+							</div>
+							<!-- END blog_comments -->
+						<!-- ELSE -->
+							暂无评论！
+						<!-- ENDIF blog_comments -->
+							<!--End of 评论内容-->
+							
+						<!--
+							评论暂不分页
+							<div style="display:block;" class="page">评论分页：共<span class="red">145</span>页 &nbsp;&nbsp;<a href="">上一页</a> <a href="">下一页</a></div>
+						-->
+						</div>
+						<div class="comment">
+							<p class="font">发表评论</p>
+							<form id="SendComment" name="SendComment" action="./?action=ccommit" method="post">
+								<input name="blogid" type="hidden" value="{blog_id}" />
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr height="22">
+										<td width="75">姓名：</td>
+										<td ><input name="nick_name" type="text" class="input"/></td>
+									</tr>
+									<tr height="22">
+										<td width="75">E-mail：</td>
+										<td ><input name="email" type="text" class="input"/></td>
+									</tr>
+									<tr height="22">
+										<td width="75">个人主页：</td>
+										<td><input name="address" type="text" class="input"/></td>
+									</tr>
+									<tr height="22">
+										<td>
+										验证码：
+										</td>
+										<td>
+										<input name="robotcode" type="text" class="input"/><img src="./?go=image&action=robot"></img>
+										</td>
+									</tr>
+									<tr>
+										<td valign="top">内容：</td>
+										<td height="170"><textarea name="content" cols="60" rows="10" class="textarea"></textarea></td>
+									</tr>
+									<tr height="25">
+										<td></td>
+										<td align="center">
+											<input type="submit" name="Submit" value="提交" class="button" />
+											<input name="reset" type="reset" value="重置" class="button" />
+										</td>
+									</tr>
+
+
+								</table>
+							</form>
+						</div>
+					</div>
+				</div><!--End of mainbody-->
+				<div class="sidebar">
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">日历</div>
+						</div>
+						<div class="year"><a href="#">«</a> 2007年6月<a href="#">»</a></div>
+						<table border="0" cellpadding="0" cellspacing="0" class="date">
+							<tr >
+								<td class="SUN">Sun</td>
+								<td>Mon</td>
+								<td>Tue</td>
+								<td>Wed</td>
+								<td>Thu</td>
+								<td>Fri</td>
+								<td class="SAT">Sat</td>
+							</tr>
+							<tr>
+								<td class="SUN">1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td class="SAT">7</td>
+							</tr>
+							<tr>
+								<td class="SUN">8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td class="SAT">14</td>
+							</tr>
+							<tr>
+								<td class="SUN">15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td class="SAT">21</td>
+							</tr>
+							<tr>
+								<td class="SUN">22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td class="SAT">28</td>
+							</tr>
+							<tr>
+								<td class="SUN">29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="SAT"></td>
+							</tr>
+						</table>
+					</div>
+					<!--相册自动播放，下个版本实现-->
+					<!--					
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">我的相册</div>
+						</div>
+						<img src="images/WoodGrain014.jpg" width="180" height="120"/>
+					</div>
+					-->
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">日志分类</div>
+						</div>
+						<ul class="TAG">
+							<!-- BEGIN categories -->
+							<li><a href="./?action=category&param2={eid}">{name}</a></li>
+							<!-- END categories -->
+						</ul>
+					</div>
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">最新评论</div>
+						</div>
+						<ul class="TAG">
+						<!-- BEGIN comments -->
+							<li><a href="./?action=blog&mode=show&param1={blogid}$comment">{content}</a></li>
+						<!-- END comments -->
+						</ul>
+					</div>
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">Link</div>
+						</div>
+						<ul class="TAG">
+						<!-- BEGIN links -->
+							<li><a href="{url}">{name}</a></li>
+						<!-- END links -->
+						</ul>
+					</div>
+				</div><!--End of sidebar-->
+			</div><!--End of warpper-->
+		</div><!--End of center-->
+		<div id="footer">
+			<div class="warpper2">
+			© Powered by <a href="http://www.cfBlog.net">cfBlog </a>  2002-2007, All Rights Reserved.<br/>
+			本站所有作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">创作共享</a> 进行许可，要求署名、非商业和保持一致。禁止商业目的转载，允许一切非商业目的的转载，转载时必须注明出自<a href="http://www.cfBlog.net">cfBlog</a>，并标注原文标题和连接<br/>
+			<!-- IF run_time -->Processed in {run_time} second(s)<!-- ENDIF --><!-- IF query_times -->,{query_times} Query(s)<!-- ENDIF -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

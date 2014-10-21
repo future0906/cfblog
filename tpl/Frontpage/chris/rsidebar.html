@@ -1,0 +1,58 @@
+            <div class="right_Pan">
+            	<div class="Div_0 type linkcol">
+                    <h3>日志分类</h3>
+
+					<!-- BEGIN categories -->
+
+                    <p><a href="./?action=category&param2={eid}">{name}</a>&nbsp;&nbsp;<span class="gray">({blogcount})</span></p>
+                    
+					<!-- END categories -->
+
+                </div>
+                <div class="Div_0 Div_1 linkcol">
+                    <h3>最新日志</h3>
+
+                    <!-- BEGIN newestblog -->
+
+                    <p><a href="./?action=blog&mode=show&param1={eid}">{title}</a></p>
+
+					<!-- END newestblog -->
+
+                </div>
+                <div class="Div_0 Div_1 linkcol">
+                    <h3>最新评论</h3>
+
+					<!-- BEGIN comments -->
+
+                    <p><a href="./?action=blog&mode=show&param1={blogid}#comment">{content}</a></p>
+
+					<!-- END comments -->
+
+                </div>
+                <div class="Div_0 links">
+                    <h3>友情链接</h3>
+                    <div class="linkcol textLinks">
+
+					<!-- BEGIN links -->
+						<!-- IF groupid=="1" -->                    	
+
+                        <p><a href="{url}">{name}</a></p>
+
+						<!-- ENDIF -->
+					<!-- END links -->
+
+                    </div>
+                    <ul>
+
+					<!-- BEGIN links -->
+						<!-- IF groupid=="2" -->  
+
+                        <li><a href="{url}"><img src=".{logo}" width="80px" height="30px"/></a></li>
+
+						<!-- ENDIF -->
+					<!-- END links -->
+
+                    </ul>
+                    <p><a href="?go=admin">管理入口</a></p>
+                </div>
+            </div>

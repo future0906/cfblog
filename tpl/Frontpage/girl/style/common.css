@@ -1,0 +1,232 @@
+/*
+author:chris
+date:2007/10/8
+*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	border:none;
+}
+#container{
+	width:100%;
+}
+#header{
+	width:100%;
+	background:#1078a0;
+}
+#center{
+	width:100%;
+}
+#footer{
+	width:100%;
+	text-align:center;
+	padding:20px 0;
+}
+#header p{
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	padding-top:20px;
+}
+#header div{
+	padding:5px 0 0 50px;
+	text-align:center;
+}
+.nav:after{ content:".";display:block; visibility:hidden;clear:both;height:0;}
+.nav{
+	padding-left:19.3em;
+}
+.nav div{
+	width:60px;
+	height:18px;
+	float:left;
+	margin-right:10px;
+	padding-top:4px;
+	text-align:center;
+}
+.warpper:after{ content:".";display:block; visibility:hidden;clear:both;height:0;}
+.warpper{
+	width:800px;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+.mainbody{
+	width:600px;
+	float:left;
+}
+.sidebar{
+	width:180px;
+	float:left;
+	margin-left:10px;
+}
+/*For mainbody*/
+.blog{
+	width:100%;
+	margin-top:40px;
+}
+.BlogTit:after{ content:".";display:block; visibility:hidden;clear:both;height:0;}
+.BlogTit{
+	width:100%;
+}
+.BlogTitle{
+	width:505px;
+	display:inline;
+	float:left;
+	margin-left:10px;
+	padding:5px 0;
+	font-weight:bold;
+}
+.BlogTime{
+	width:75px;
+	margin-left:10px;
+	padding:5px 0;
+	float:left;
+}
+.dashed{
+	padding-bottom:10px;
+}
+.tag{
+	padding:5px 0 5px 15px;
+}
+.blog p{
+	line-height:28px;
+}
+.information{
+	width:350px;
+	margin-top:10px;
+}
+.page{
+	margin-top:20px;
+	text-align:right;
+}
+/*For sidebar*/
+.type{
+	width:100%;
+	margin-top:40px;
+}
+.TypeName{
+	height:20px;
+	text-align:center;
+	padding-top:5px;
+}
+*html .TypeName{
+	padding-top:8px;
+	height:18px;
+}
+.mouth{
+	font-size:10px;
+	color:#000;
+}
+.year{
+	font-weight:bold;
+	text-align:center;
+	margin:12px 0 5px 0;
+}
+.date{
+	width:100%;
+}
+.date tr td{
+	text-align:center;
+	height:20px;
+	width:25px;
+}
+.TAG{
+	padding-left:20px;
+	margin:10px 0;
+}
+.TAG li{
+	margin:7px 0;
+	list-style-image:url("../images/comment.gif");
+}
+/*For sidebar*/
+.warpper2{
+	width:800px;
+	margin:0 auto;
+	line-height:20px;
+}
+/*For Log*/
+.BlogTitle2{
+	width:580px;
+}
+.information2{
+	width:500px;
+	margin:10px 10px 10px 0;
+	display:inline;
+	text-align:right;
+	float:right;
+}
+.margin{
+	margin-bottom:10px;
+}
+/*For Comment*/
+.comment{
+	margin-top:10px;
+}
+.font{
+	font-size:14px;
+	font-weight:bold;
+	padding-left:25px;
+}
+.comment-tit{
+	font-weight:bold;
+	padding:5px 0;
+	padding-left:15px;
+	margin:10px 0;
+}
+.comment-replay{
+	margin:10px 0;
+	padding:10px;
+}
+.underline{
+	text-decoration:underline;
+}
+/*For Tag*/
+.yellow{
+	background:url("../images/ico_arrow.gif") no-repeat left center;
+	padding-left:15px;
+}
+.tags{
+	padding:10px 0;
+}
+.tags a{
+	margin:0 10px 0 0;
+}
+/*For Album*/
+.b1:after{ content:".";display:block; visibility:hidden;clear:both;height:0;}
+.album{
+	float:left;
+	width:200px;
+	height:150px;
+	margin:10px 60px 20px 0;
+}
+.information3{
+	width:120px;
+	margin:0;
+}
+/*For About me*/
+.b2{
+	width:50px;
+	text-align:right;
+}
+.data{
+	width:100%;
+	margin:20px 0 20px 0;
+}
+.b3{
+	padding-bottom:5px;
+	font-weight:bold;
+}
+.base{	
+	width:100%;
+}
+.base tr td{
+	height:30px;
+}

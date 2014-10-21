@@ -1,0 +1,129 @@
+/*
+author:chris
+date:2007/10/8
+*/
+body{
+	color:#FFF;
+	background:#107399;
+}
+a:link,a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover{
+	color:#FFCC00;
+}
+.linkcol a:link,.linkcol a:visited{
+	color:#FFCC00;
+}
+.linkcol a:hover{
+	color:#FFF;
+}
+#header div{
+	color:#a8e7ff;
+}
+.nav div {
+	border-bottom:1px solid #008dc4;
+	border-right:1px solid #008dc4;
+	border-left:1px solid #008dc4;
+}
+/*For mainbody*/
+.BlogTit{	
+	background:#117ba4;
+}
+.BlogTitle a:link,.BlogTitle a:visited{
+	color:#FFDB48;
+}
+.BlogTitle a:hover{
+	color:#FFCC00;
+}
+.BlogTime{
+	color:#6aa8c0;
+}
+.dashed{	
+	border-bottom:1px dashed #008dc4;
+}
+.tag{
+	color:#6aa8c0;
+}
+.information{
+	color:#173F66;
+}
+.information a:link,.information a:visited{
+	color:#173F66;
+}
+.information a:hover{
+	color:#BAD5EF;
+}
+.red{
+	color:#FFCC00;
+}
+/*For sidebar*/
+.SUN{
+	color:#FF6600;
+}
+.SAT{
+	color:#00CC33;
+}
+/*For footer*/
+#footer{
+	color:#173F66;
+}
+#footer a:link,#footer a:visited{
+	color:#FFF;
+}
+/*For Comment*/
+.input{
+	height:18px;
+	margin-bottom:10px;
+	background:#107399;
+	border:1px dashed #00A7E6;
+}
+.textarea{
+	background:#107399;
+	border:1px dashed #00A7E6;
+	scrollbar-face-color:#107399;
+	scrollbar-highlight-color:#107399;
+	scrollbar-3dlight-color:#00A7E6;
+	scrollbar-Shadow-color:#00A7E6;
+	scrollbar-arrow-color:#00A7E6;
+	scrollbar-track-color:#107399;	
+	scrollbar-darkshadow-color:#107399;
+}
+.button{
+	width:50px;
+	height:20px;
+	border:none;
+	cursor:pointer;
+	margin:10px 0;
+	color:#FFF;
+	background:#173F66;
+}
+.comment-tit{
+	border-bottom:1px dashed #008dc4;
+	color:#FFCC00;
+}
+.comment-replay{
+	border:1px dashed #173F66;
+	color:#173F66;
+}	
+.comment-p{
+	width:600px;
+	color:#fff;
+}
+/*For Tag*/
+.yellow{
+	color:#FFCC00;
+}
+.tagscloud{
+	color:#6aa8c0;
+}
+/*For Message*/
+.b4{
+	width:80px;
+}
+/* Add by future0906,当多行内容时换行*/
+.wrap_content{
+	word-break:break-all;
+	overflow:auto;
+}

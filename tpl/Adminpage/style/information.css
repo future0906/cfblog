@@ -1,0 +1,70 @@
+/*
+author:chrisZhong
+date:2008/07/17
+E-mail:chris-future@163.com
+*/
+body{
+	font:9pt Arial, Helvetica, sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+}
+.bold{
+	font-weight:bold;
+}
+.infor_Pan{
+	width:500px;
+	margin:0 auto;
+	margin-top:250px;
+	border:5px solid #ccc;
+}
+.empty_Pan{
+	width:470px;
+	margin:0 auto;
+	border-top:7px solid #7a7979;
+}
+.titPan{
+	width:90%;
+	margin:0 auto;
+	padding:20px 0 5px 0;
+	border-bottom:1px dotted #ccc;
+}
+.conPan{
+	width:90%;
+	margin:0 auto;
+	padding:10px 0 0 0;
+}
+.conPan span{
+	display:block;
+	margin-bottom:15px;
+}
+.conPan p{
+	line-height:25px;
+	background:url("../images/icon02.gif") no-repeat 0 9px;
+	padding-left:12px;
+	margin-left:15px;
+}
+.conPan p a:link,.conPan p a:visited{
+	color:#000;
+	border-bottom:1px dotted #DD0005;
+	text-decoration:none;
+}
+.conPan p a:hover{
+	color:#DD0005;
+	border-bottom:none;
+}
+.linkPan{
+	width:90%;
+	color:#999;
+	margin:0 auto;
+	text-align:right;
+	margin-bottom:15px;
+}
+.linkPan a:link,.linkPan a:visited{
+	color:#999;
+	text-decoration:none;
+}
+.linkPan a:hover{
+	color:#DD0005;
+}

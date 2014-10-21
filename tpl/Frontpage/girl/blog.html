@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<base href="{blogurl}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Chris,Future,cfBlog,Blog,阿肠,future0906,{keywords}" />
+<meta name="description" content="Chris,Future,Blog,阿肠,future0906,{description}" />
+<meta name="author" content="Chris,Future,阿肠,future0906" />
+<meta name="copyright" content="cfBlog,Chris,Future,阿肠" />
+<meta name="Robots" content="all" />
+<title>{title}</title>
+<link href="tpl/Frontpage/{templatename}/style/common.css" rel="stylesheet" type="text/css" />
+<link href="tpl/Frontpage/{templatename}/style/form-color.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<p>{blog_title}</p>
+			<div>{blog_subtitle}</div>
+		</div>
+		<div id="center">
+			<div class="nav">
+				<div><a href="./?action=index">首页</a></div>
+				<div><a href="./?action=blog&mode=list">日志</a></div>
+				<div><a href="./?action=photo">相册</a></div>
+				<div><a href="./?go=admin">登录后台</a></div>
+				<div><a href="./?action=about">关于我</a></div>			
+				<!-- BEGIN extract_menus -->
+				<div><a href="{link}">{name}</a></div>
+				<!-- END extract_menus -->
+			</div>
+			<div class="warpper">
+				<div class="mainbody">
+					<!-- IF blogs -->
+					<!-- BEGIN blogs -->
+					<div class="blog">
+						<div class="BlogTit">
+							<div class="BlogTitle"><a href="./?action=blog&mode=show&param1={id}"><!-- IF on_top = "1" -->[顶置]<!-- ENDIF on_top-->{title}</a></div>
+							<div class="BlogTime">{date}</div>
+						</div>
+						
+						<div class="dashed wrap_content">
+							<!-- IF password -->
+							这篇日志必须密码才能访问，请输入密码<form method="post" action="./?action=blog&mode=show&param1={id}"><input class="input" type="password" name="password" size=32/><input class="input" value="提交" type="submit"/></form>
+							<!-- ELSE -->
+							{content}
+							<!-- ENDIF -->
+						</div>
+						<div class="information">{parent.author}@{time} | <a href="./?action=blog&mode=show&param1={id}">阅读全文({r_count})</a> | <a href="./?action=blog&mode=show&param1={id}#comment">评论({c_count})</a> | <a href="./?go=admin&action=post&mode=edit&param1={id}">编辑</a> | <a href="./?{parent.list_url}">列表</a></div>
+					</div>
+					<!-- END blogs -->
+					<div style="display:block;" class="page">{multi_page}</div>
+					<!-- ELSE -->
+						没有日志！
+					<!-- ENDIF blogs -->
+				</div><!--End of mainbody-->
+				<div class="sidebar">
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">日历</div>
+						</div>
+						<div class="year"><a href="#">«</a> 2007年6月<a href="#">»</a></div>
+						<table border="0" cellpadding="0" cellspacing="0" class="date">
+							<tr >
+								<td class="SUN">Sun</td>
+								<td>Mon</td>
+								<td>Tue</td>
+								<td>Wed</td>
+								<td>Thu</td>
+								<td>Fri</td>
+								<td class="SAT">Sat</td>
+							</tr>
+							<tr>
+								<td class="SUN">1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td class="SAT">7</td>
+							</tr>
+							<tr>
+								<td class="SUN">8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td class="SAT">14</td>
+							</tr>
+							<tr>
+								<td class="SUN">15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td class="SAT">21</td>
+							</tr>
+							<tr>
+								<td class="SUN">22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td class="SAT">28</td>
+							</tr>
+							<tr>
+								<td class="SUN">29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="SAT"></td>
+							</tr>
+						</table>
+					</div>
+					<!--相册自动播放，下个版本实现-->
+					<!--					
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">我的相册</div>
+						</div>
+						<img src="images/WoodGrain014.jpg" width="180" height="120"/>
+					</div>
+					-->
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">日志分类</div>
+						</div>
+						<ul class="TAG">
+							<!-- BEGIN categories -->
+							<li><a href="./?action=category&param2={eid}">{name}</a></li>
+							<!-- END categories -->
+						</ul>
+					</div>
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">最新评论</div>
+						</div>
+						<ul class="TAG">
+						<!-- BEGIN comments -->
+							<li><a href="./?action=blog&mode=show&param1={blogid}$comment">{content}</a></li>
+						<!-- END comments -->
+						</ul>
+					</div>
+					<div class="type">
+						<div class="BlogTit">
+							<div class="TypeName">Link</div>
+						</div>
+						<ul class="TAG">
+							<li><a href="http://www.cf-blog.net">cfblog</a></li>
+						<!-- BEGIN links -->
+							<li><a href="{url}">{name}</a></li>
+						<!-- END links -->
+						</ul>
+					</div>
+				</div><!--End of sidebar-->
+			</div><!--End of warpper-->
+		</div><!--End of center-->
+		<div id="footer">
+			<div class="warpper2">
+			© Powered by <a href="http://www.cfBlog.net">cfBlog </a>  2002-2007, All Rights Reserved.<br/>
+			本站所有作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">创作共享</a> 进行许可，要求署名、非商业和保持一致。禁止商业目的转载，允许一切非商业目的的转载，转载时必须注明出自<a href="http://www.cfBlog.net">cfBlog</a>，并标注原文标题和连接<br/>
+			<!-- IF run_time -->Processed in {run_time} second(s)<!-- ENDIF --><!-- IF query_times -->,{query_times} Query(s)<!-- ENDIF -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

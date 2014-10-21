@@ -1,0 +1,9 @@
+syntax: glob
+cache\*
+temp\*
+upload\*
+*~
+*.swp
+cfblog_backup.sql
+*.orig
+dev_tool\*

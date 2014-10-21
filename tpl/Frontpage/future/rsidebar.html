@@ -1,0 +1,54 @@
+            <div class="sideBar">
+            	<div class="outerPan type">
+                    <h3>RSS订阅</h3>
+                    <p>chris blog&nbsp;&nbsp;<a href=""><img src="tpl/Frontpage/{templatename}/images/icon_rss.gif" /></a></p>
+                    <p>蓝色理想&nbsp;&nbsp;<a href=""><img src="tpl/Frontpage/{templatename}/images/icon_rss.gif" /></a></p>
+                    <p>网易&nbsp;&nbsp;<a href=""><img src="tpl/Frontpage/{templatename}/images/icon_rss.gif" /></a></p>
+                    <p>腾迅QQ&nbsp;&nbsp;<a href=""><img src="tpl/Frontpage/{templatename}/images/icon_rss.gif" /></a></p>
+                </div>
+                <div class="outerPan type linkcol3">
+                    <h3>文章分类</h3>
+
+					<!-- BEGIN categories -->
+
+                    <p><a href="./?action=category&param2={eid}">{name}</a>&nbsp;&nbsp;<span class="gray">({blogcount})</span></p>
+                    
+					<!-- END categories -->
+
+                </div>
+                <div class="outerPan type linkcol3">
+                    <h3>最新评论</h3>
+
+					<!-- BEGIN comments -->
+
+                    <p><a href="./?action=blog&mode=show&param1={blogid}#comment">{content}</a></p>
+
+					<!-- END comments -->
+
+                </div>
+                <div class="outerPan type linkcol3">
+                    <h3>实用推荐</h3>
+				
+					<!-- BEGIN links -->
+						<!-- IF groupid=="4" -->
+
+                    <p><a href="{url}">{name}</a></p>
+
+						<!-- ENDIF -->
+					<!-- END links -->
+
+				</div>
+
+                <div class="outerPan type linkcol3">
+                    <h3>My Project</h3>
+					<!-- BEGIN links -->
+						<!-- IF groupid=="3" -->
+
+                    <p><a href="{url}">{name}</a></p>
+
+						<!-- ENDIF -->
+					<!-- END links -->
+                </div>
+
+                <div class="outerPan">广告</div>
+            </div>

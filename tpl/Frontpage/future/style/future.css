@@ -1,0 +1,396 @@
+/*
+author:chrisZhong
+date:2008-06-30
+*/
+body{
+	font:9pt Arial, Helvetica, sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	border:none;
+}
+a:link,a:visited{
+	color:#000;
+	text-decoration:underline;
+}
+a:hover{
+	color:#2d6ea8;
+}
+.linkcol1 a:link,.linkcol1 a:visited{
+	color:#2d6ea8;
+	text-decoration:underline;
+}
+.linkcol1 a:hover{
+	color:#DD0005;
+}
+.linkcol2 a:link,.linkcol2 a:visited{
+	color:#666;
+	text-decoration:none;
+}
+.linkcol2 a:hover{
+	text-decoration:underline;
+}
+.linkcol3 a:link,.linkcol3 a:visited{
+	color:#666;
+	text-decoration:none;
+}
+.linkcol3 a:hover{
+	color:#2d6ea8;
+}
+.bold{
+	font-weight:bold;
+}
+.font_14{
+	font-size:14px;
+}
+.font_10{
+	font-size:10px;
+}
+.blue{
+	color:#2d6ea8;
+}
+.gray{
+	color:#999;
+}
+.input{
+	border:1px solid #ccc;
+}
+.button{
+	height:22px;
+	color:#2d6ea8;
+	background:#FFF;
+	border:2px solid #2d6ea8;
+	cursor:pointer;
+}
+/*---------------------*/
+#container{
+	margin:0;
+}
+#header{
+	width:100%;
+	background:#000 url("../images/tree.gif") no-repeat right bottom;
+	border-bottom:1px solid #a6a6a6;
+	position:relative;
+}
+#center:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+#center{
+	width:100%;
+}
+#footer{
+	width:100%;
+	margin-top:40px;
+}
+#footer p{
+	margin-bottom:10px;
+	text-align:center;
+}
+/*---------------------*/
+.logo{
+	width:213px;
+	padding:25px 0 0 40px;
+}
+.toSign{
+	width:380px;
+	color:#b3b3b3;
+	margin:5px 0 55px 115px!important;
+	margin:5px 0 42px 115px;
+}
+.nav{
+	width:325px;
+	font-size:14px;
+	position:absolute;
+	left:48%;
+	top:100px;
+}
+.nav span{
+	margin-left:20px;
+}
+.nav a:link,.nav a:visited{
+	color:#FFF;
+	text-decoration:none;
+	border-bottom:1px solid #1EABFF;
+}
+.nav a:hover{
+	color:#1EABFF;
+	border-bottom:none;
+}
+.something:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+.something{
+	width:250px;
+	height:34px;
+	position:absolute;
+	left:100px;
+	top:100px;
+}
+.wPan{
+	width:80px;
+	height:100%;
+	float:left;
+	background:#f7f7f7 url("../images/w01.gif") no-repeat left top;
+}
+.wPan .w01{
+	line-height:34px;
+	margin-left:10px;
+	background:url("../images/w02.gif") no-repeat right top;
+}
+.bPan{
+	width:129px;
+	height:100%;
+	float:left;
+	background:url("../images/b03.gif") repeat-x;
+}
+.bPan .bLeft{
+	width:3px;
+	height:100%;
+	float:left;
+	background:url("../images/b01.gif") no-repeat;
+}
+.bPan .b01{
+	height:100%;
+	padding-top:8px;
+	margin-left:18px;
+	color:#b3b3b3;
+	background:url("../images/b02.gif") no-repeat right top;
+}
+.hr{
+	width:100%;
+	border-bottom:3px solid #b3b3b3;
+}
+/*---------------------*/
+.aboutBar{
+	width:300px;
+	float:left;
+	color:#666;
+	background:#f7f7f7;
+	border-right:1px solid #c0c0c0;
+	border-bottom:1px solid #c0c0c0;
+}
+.sideBar{
+	width:220px;
+	float:right;
+}
+.mainbody{
+	margin:0 250px 0 325px;
+	height:1%;
+}
+/*---------mainbody-------------*/
+.log{
+	width:100%;
+	margin-bottom:40px;
+	padding-top:30px;
+	border-bottom:1px solid #cdbeb3;	
+}
+h4{
+	font-size:16px;
+	margin-bottom:5px;
+}
+.log_Head{
+	padding-bottom:5px;
+	margin-bottom:15px;
+	border-bottom:1px dashed #cdbeb3;	
+}
+.log_Head p{
+	line-height:18px;
+}
+.log_Text{
+	font-size:13px;
+}
+.log_Text p{
+	line-height:20px;
+	margin-bottom:20px;
+}
+.log_Text img{
+	border:1px solid #ccc;
+}
+.log_Foot{
+	padding-bottom:20px;
+	text-align:right;
+}
+.page{
+	text-align:right;
+}
+/*---------aboutBar-------------*/
+.img{
+	border:1px solid #ccc;
+	padding:1px;
+}
+h3{
+	color:#000;
+	font-size:14px;
+	margin-bottom:8px;
+}
+.Div_0{
+	margin:20px 0 0 40px;
+	padding-bottom:20px;
+}
+.Div_0 p{
+	line-height:18px;
+}
+.p_align{
+	margin-left:25px;
+}
+.Div_1{
+	margin-top:0;
+}
+.Div_1 p{
+	width:92%;
+	line-height:22px;
+}
+.Div_2 p{
+	width:92%;
+	line-height:22px;
+	background:url("../images/icon.png") no-repeat 0 9px;
+	padding-left:12px;
+}
+.links ul:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+.links{
+	width:245px;
+}
+.links ul{
+	list-style:none;
+}
+.links ul li{
+	width:49.5%;
+	float:left;
+	margin:5px 0 10px 0;
+}
+.links img{
+	border:1px solid #ccc;
+	padding:1px;
+}
+.textLinks{
+	width:100%;
+	border-bottom:1px dashed #d9d9d9;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+.textLinks p{
+	line-height:22px;
+	background:url("../images/textLinks.gif") no-repeat 0 5px;
+	padding-left:17px;
+}
+/*---------sideBar-------------*/
+.outerPan{
+	margin:20px 40px 0 0;
+	padding-bottom:20px;
+}
+.type p{
+	width:92%;
+	line-height:22px;
+	background:url("../images/32.gif") no-repeat 0 9px;
+	padding-left:12px;
+	border-bottom:1px dashed #cdbeb3;
+}
+/*-------log_detail style-------*/
+.host_answer{
+	padding:5px 0 5px 13px;
+}
+.log_comment{
+	margin-bottom:20px;
+	border-bottom:1px solid #e0e0e0;
+}
+.comment_box{
+	margin-bottom:20px;
+}
+.comment_box p{
+	line-height:22px;
+}
+.Form{
+	margin-bottom:20px;
+	border-bottom:none;
+}
+.Form table{
+	margin-top:10px;
+}
+.Form table tr td{
+	padding-bottom:5px;
+}
+.Form table tr td img{
+	border:1px solid #d0d0d0;
+}
+/*-------log_list style-------*/
+.list_body{
+	margin:0 40px 0 330px;
+}
+.log_list:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+.log_list{
+	width:99.5%;
+	margin:20px 0;
+}
+.log_list tr td{
+	padding:10px 0;
+	line-height:18px;
+	border-bottom:1px dotted #d0d0d0;	
+}
+/*-------photos style-------*/
+.pic_Pan{
+	width:99.5%;
+	overflow:auto;
+	margin-bottom:30px;
+}
+.pic_Pan div{
+	width:33.1%;
+	float:left;
+	margin-top:30px;
+	text-align:center;
+}
+.pic_Pan div img{
+	border:1px solid #ccc;
+	margin-bottom:5px;
+	padding:4px;
+}
+.pic_Pan div p{
+	text-align:center;
+}
+/*-------resume style-------*/
+.contactUs{
+	width:99.5%;
+	padding-top:5px;
+	overflow:hidden;
+}
+.data{
+	margin:20px 0 20px 0;
+}
+.data p{
+	line-height:25px;
+}
+.b3{
+	color:#2d6ea8;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	font-weight:bold;
+	border-bottom:1px dashed #e0e0e0;
+}
+.base{	
+	width:100%;
+}
+.base tr td{
+	height:25px;
+}
